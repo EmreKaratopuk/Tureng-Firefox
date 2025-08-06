@@ -170,20 +170,37 @@ window.onload = async () => {
 };
 
 // TTS
+const playPronunciation = async (text, lang) => {
+  const url = `https://translate.google.com/translate_tts?client=tw-ob&q=${encodeURIComponent(
+    text
+  )}&tl=${lang}`;
+  const audio = new Audio(url);
+  audio.crossOrigin = "anonymous";
+  audio.load();
+
+  await browser.permissions.request({
+    origins: [
+      "https://translate.google.com/*",
+    ]
+  });
+
+  await audio.play().catch(e => log.error(logDir, "playAudio()", e, url));
+};
+
 document.getElementById('flag-tr').addEventListener('click', () => {
-  chrome.tts.speak(document.getElementById('search-input').value, { 'lang': 'tr-TR', 'rate': 0.8 });
+  playPronunciation(document.getElementById('search-input').value, 'tr');
 });
 
 document.getElementById('flag-us').addEventListener('click', () => {
-  chrome.tts.speak(document.getElementById('search-input').value, { 'lang': 'en-US', 'rate': 0.8 });
+  playPronunciation(document.getElementById('search-input').value, 'en-us');
 });
 
 document.getElementById('flag-uk').addEventListener('click', () => {
-  chrome.tts.speak(document.getElementById('search-input').value, { 'lang': 'en-GB', 'rate': 0.8 });
+  playPronunciation(document.getElementById('search-input').value, 'en-gb');
 });
 
 document.getElementById('flag-au').addEventListener('click', () => {
-  chrome.tts.speak(document.getElementById('search-input').value, { 'lang': 'en-AU', 'rate': 0.8 });
+  playPronunciation(document.getElementById('search-input').value, 'en-au');
 });
 
 // tureng-logo
