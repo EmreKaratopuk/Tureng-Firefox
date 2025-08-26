@@ -1,55 +1,47 @@
 {
-   "author": "Kerim Demirel",
-   "developer": {
-      "name": "Ali Emre Karatopuk",
-      "url": "https://www.linkedin.com/in/emrekaratopuk/"
-   },
-   "manifest_version": 3,
-   "name": "Tureng Dictionary",
-   "short_name": "Tureng",
-   "description": "Tureng English-Turkish Online Dictionary",
-   "version": "7.1.1",
-   "action": {
-      "default_icon": {
-         "128": "images/AppIcon.png",
-         "256": "images/AppIcon.png"
-      },
-      "default_popup": "popup.html",
-      "default_title": "Tureng Dictionary"
-   },
-   "icons": {
+  "author": "Kerim Demirel",
+  "developer": {
+    "name": "Ali Emre Karatopuk",
+    "url": "https://www.linkedin.com/in/emrekaratopuk/"
+  },
+  "manifest_version": 3,
+  "name": "Tureng Dictionary",
+  "short_name": "Tureng",
+  "description": "Tureng English-Turkish Online Dictionary",
+  "version": "7.1.1",
+  "action": {
+    "default_icon": {
       "128": "images/AppIcon.png",
-      "16": "images/AppIcon.png",
       "256": "images/AppIcon.png"
-   },
-   "permissions": [
-      "activeTab",
-      "contextMenus",
-      "scripting"
-   ],
-  "host_permissions": [
-    "https://translate.google.com/*"
-  ],
-   "background": {
-      "scripts": [
-         "scripts/background.js"
-      ]
-   },
-   "options_ui": {
-      "page": "info.html"
-   },
-   "commands": {
-      "_execute_action": {
-         "suggested_key": {
-            "chromeos": "Ctrl+Alt+V",
-            "default": "Ctrl+Alt+V",
-            "linux": "Ctrl+Alt+V",
-            "mac": "Ctrl+Alt+V",
-            "windows": "Ctrl+Alt+V"
-         }
+    },
+    "default_popup": "popup.html",
+    "default_title": "Tureng Dictionary"
+  },
+  "icons": {
+    "128": "images/AppIcon.png",
+    "16": "images/AppIcon.png",
+    "256": "images/AppIcon.png"
+  },
+  "permissions": ["activeTab", "contextMenus", "scripting"],
+  "host_permissions": ["https://translate.google.com/*"],
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "options_ui": {
+    "page": "info.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "chromeos": "Ctrl+Alt+V",
+        "default": "Ctrl+Alt+V",
+        "linux": "Ctrl+Alt+V",
+        "mac": "Ctrl+Alt+V",
+        "windows": "Ctrl+Alt+V"
       }
-   },
-   "omnibox": {
-      "keyword": "ms"
-   }
+    }
+  },
+  "omnibox": {
+    "keyword": "ms"
+  }
 }

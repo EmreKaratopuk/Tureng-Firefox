@@ -11,7 +11,9 @@ Credit: https://codepen.io/ademilter/pen/JDtcy
   display: none;
 }
 
-.outer-shadow, .inner-shadow, #timer {
+.outer-shadow,
+.inner-shadow,
+#timer {
   z-index: 6;
   position: absolute;
   width: 100%;
@@ -46,7 +48,8 @@ Credit: https://codepen.io/ademilter/pen/JDtcy
   background-color: #fff;
 }
 
-.pie, .dot span {
+.pie,
+.dot span {
   background-color: #f50;
 }
 

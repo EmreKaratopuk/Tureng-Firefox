@@ -3,7 +3,7 @@ body {
 }
 
 table {
-  overflow:scroll;
+  overflow: scroll;
   font-size: small;
 }
 
@@ -19,12 +19,12 @@ table tbody th {
   align-self: center;
   width: 420px;
   box-sizing: border-box;
-  border: 2px solid #BD1E2C;
+  border: 2px solid #bd1e2c;
   border-radius: 6px;
   font-size: 16px;
   background-color: #eeeeee;
-  background-image: url('../images/searchicon.png');
-  background-position: 10px 11px; 
+  background-image: url("../images/searchicon.png");
+  background-position: 10px 11px;
   background-repeat: no-repeat;
   padding: 10px 20px 10px 40px;
 }
@@ -53,12 +53,12 @@ table tbody th {
   opacity: 0.7;
 }
 
-
 .coming-soon {
   display: none;
 }
 
-.audio:hover, #difficultyIndex:hover {
+.audio:hover,
+#difficultyIndex:hover {
   cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ table tbody a:hover {
 
 /* TR */
 .flag-tr {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
