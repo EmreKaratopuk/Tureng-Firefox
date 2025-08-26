@@ -1,5 +1,9 @@
 {
    "author": "Kerim Demirel",
+   "developer": {
+      "name": "Ali Emre Karatopuk",
+      "url": "https://www.linkedin.com/in/emrekaratopuk/"
+   },
    "manifest_version": 3,
    "name": "Tureng Dictionary",
    "short_name": "Tureng",
@@ -23,12 +27,9 @@
       "contextMenus",
       "scripting"
    ],
-   "optional_permissions": [
-      "https://translate.google.com/*"
-   ],
-   "optional_host_permissions": [
-      "https://translate.google.com/*"
-   ],
+  "host_permissions": [
+    "https://translate.google.com/*"
+  ],
    "background": {
       "scripts": [
          "scripts/background.js"
