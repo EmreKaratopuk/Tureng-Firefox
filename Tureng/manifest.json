@@ -33,11 +33,11 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "chromeos": "Ctrl+Alt+V",
-        "default": "Ctrl+Alt+V",
-        "linux": "Ctrl+Alt+V",
-        "mac": "Ctrl+Alt+V",
-        "windows": "Ctrl+Alt+V"
+        "chromeos": "Alt+Z",
+        "default": "Alt+Z",
+        "linux": "Alt+Z",
+        "mac": "Alt+Z",
+        "windows": "Alt+Z"
       }
     }
   },
