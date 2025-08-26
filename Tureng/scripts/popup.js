@@ -134,6 +134,13 @@ function tureng(str) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const input_field = document.getElementById("search-input");
+  if (input_field) {
+    setTimeout(() => {
+      input_field.focus();
+      input_field.select();
+}, 50);  };
+
   document.getElementById('tureng').addEventListener('click', () => {
     tureng(document.getElementById('search-input').value);
   });
@@ -159,7 +166,7 @@ window.onload = async () => {
       func: () => getSelection().toString(),
     });
   } catch (e) {
-    return; // ignoring an unsupported page like chrome://extensions
+    return; // ignoring an unsupported page like about:addons
   }
 
   document.getElementById('search-input').value = result;
