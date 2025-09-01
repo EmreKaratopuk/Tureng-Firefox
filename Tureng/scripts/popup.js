@@ -84,7 +84,7 @@ function tureng(str) {
 
           $("#content").append(`
             <table class="table table-striped table-hover">
-              <thead class="thead-default">
+              <thead class="table-light">
                 <tr>
                   <th>#</th>
                   <th>${safeResponse.cleanDomString(
